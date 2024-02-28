@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "nom": "Joe",
+        "prenom": "Doe",
+        "age": 18,
+        "ville": "Cotonou",
+        "notes" : {
+            "francais" : [10,12,15],
+            "Mathematique" : [6,12,7],
+            "Svt" : [15,16,16]
+        }
+    },
+    {
+        "id":2,
+        "nom": "DOSSOU",
+        "prenom": "Bienvenu",
+        "age": 30,
+        "ville": "Porto-Novo",
+        "notes" : {
+            "francais" : [15,18,10],
+            "Mathematique" : [3,13,10],
+            "Svt" : [16,16,16]
+        }
+    },
+    {
+        "id":3,
+        "nom": "MARTIN",
+        "prenom": "Ethien",
+        "age": 16,
+        "ville": "Bohicon",
+        "notes" : {
+            "francais" : [15,15,15],
+            "Mathematique" : [17,18,18],
+            "Svt" : [17,20,16]
+        }
+    },
+    {
+        "id":4,
+        "nom": "SAHOUE",
+        "prenom": "Bonneaventure",
+        "age": 25,
+        "ville": "save",
+        "notes" : {
+            "francais" : [8,9,10],
+            "Mathematique" : [16,15,14],
+            "Svt" : [3,20,18]
+        }
+    },
+    {
+        "id":5,
+        "nom": "CHABI",
+        "prenom": "Diane",
+        "age": 20,
+        "ville": "Natitingou",
+        "notes" : {
+            "francais" : [5,20,20],
+            "Mathematique" : [8,12,15],
+            "Svt" : [14,12,16]
+        }
+    }
+]

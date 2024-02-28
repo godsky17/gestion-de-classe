@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">GOC</h1>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="eleves.html">Eleves</a></li>
+        </ul>
+    </header>
+    <section class="lists">
+        <h3 class="title_section">Liste de la class</h3>
+        <div class="list_content">
+        </div>
+    </section>
+
+
+    <script type="module">
+        import {fetchUsers} from "./functions.js";
+        import {showUsers} from "./functions.js";
+        fetchUsers('users.json').then(data => {
+            showUsers(data, ".list_content")
+        })
+    </script>
+</body>
+</html>
