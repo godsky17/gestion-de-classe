@@ -57,7 +57,7 @@ function noteItem(matiere, notes) {
     // TODO: arrondir la moyenne
     let p2 = document.createElement('p')
     p2.setAttribute('class', 'w-25')
-    p2.innerText = moyenne(notes)
+    p2.innerText = moyenne(notes).toFixed(2)
     div.appendChild(p2)
 
 
