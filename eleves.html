@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1 class="logo">GOC</h1>
@@ -16,17 +18,28 @@
     </header>
     <section class="lists">
         <h3 class="title_section">Liste de la class</h3>
-        <div class="list_content">
+        <div class="d-flex align-start justify-between">
+            <div class="list_content w-100">
+            </div>
+            <div class="note_content w-50 invisible">
+                <h1 id="name" class="mb-20">Lorem Ipsum</h1>
+                <div class="notes-content w-100" id="noteZone">
+                    
+                </div>
+                <button class="btn-close close" id="close">x</button>
+            </div>
         </div>
     </section>
 
-
+    <script src="app.js"></script>
     <script type="module">
-        import {fetchUsers} from "./functions.js";
-        import {showUsers} from "./functions.js";
+        import { fetchUsers } from "./functions.js";
+        import { showUsers } from "./functions.js";
         fetchUsers('users.json').then(data => {
             showUsers(data, ".list_content")
         })
+
     </script>
 </body>
+
 </html>

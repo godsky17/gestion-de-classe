@@ -8,6 +8,51 @@ a{
     text-decoration: none;
 }
 
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-start{
+    /*align-items: center;*/
+    align-items: start;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.invisible{
+    display: none;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -66,4 +111,37 @@ section{
 
 .list_content .item:hover{
     background-color: rgba(126, 247, 152, 0.308);
+}
+
+.note_content  {
+    position: relative;
+}
+
+.notes-content .note-item {
+    padding: 12px 8px;
+    border: 1px solid grey;
+}
+
+.notes-content .note-item ul li{
+    list-style: none;
+    margin-right: 12px;
+}
+
+.note_content , .list_content {
+    padding: 10px;
+}
+
+.btn-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 74, 74);
+    font-size: 1em;
+    font-weight: 800;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }

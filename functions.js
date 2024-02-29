@@ -32,9 +32,11 @@ function createItem(user){
         divControls.setAttribute('class', 'controls')
         p.innerText = user.nom + ' ' + user.prenom
         notes.innerText = "Notes"
-        notes.setAttribute('href', 'user.html?id='+ user.id +'')
+        notes.setAttribute('href', '#')
+        notes.setAttribute('onclick', 'notes('+ user.id +')')
         rapport.innerText = "Rapport"
-        rapport.setAttribute('href', 'rapport.html?id='+ user.id +'')
+        rapport.setAttribute('onclick', 'showRapport('+ user.id +')')
+        rapport.setAttribute('href', '#')
         divControls.appendChild(notes)
         divControls.appendChild(rapport)
         div.appendChild(p)
